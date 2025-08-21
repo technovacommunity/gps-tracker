@@ -1,0 +1,5 @@
+[
+  { "id": "Drone-1", "lat": 6.1319, "lng": 1.2228, "type": "Drone", "status": "Actif" },
+  { "id": "Camera-A", "lat": 6.1350, "lng": 1.2300, "type": "Caméra", "status": "Fixe" },
+  { "id": "Vehicule-2", "lat": 6.1400, "lng": 1.2250, "type": "Voiture", "status": "En mouvement" }
+]

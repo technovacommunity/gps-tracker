@@ -1,14 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>GPS Tracker - Technova</title>
+  <title>Technova - Suivi GPS</title>
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <h1>Suivi GPS des équipements sensibles</h1>
-  <div id="map" style="height: 500px;"></div>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2><i class="fa-solid fa-bolt"></i> Technova</h2>
+    <nav>
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-chart-line"></i> Tableau de bord</a></li>
+        <li><a href="#"><i class="fa-solid fa-map"></i> Carte</a></li>
+        <li><a href="#"><i class="fa-solid fa-box"></i> Appareils</a></li>
+        <li><a href="#"><i class="fa-solid fa-gear"></i> Paramètres</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <!-- Header -->
+    <header>
+      <h1><i class="fa-solid fa-location-dot"></i> Suivi GPS des équipements sensibles</h1>
+    </header>
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+      <!-- Carte -->
+      <div id="map"></div>
+
+      <!-- Equipements -->
+      <div class="equipments">
+        <h3><i class="fa-solid fa-list"></i> Équipements</h3>
+        <ul id="equip-list">
+          <li>Chargement...</li>
+        </ul>
+        <div class="actions">
+          <button class="btn add"><i class="fa-solid fa-plus"></i> Ajouter</button>
+          <button class="btn remove"><i class="fa-solid fa-minus"></i> Supprimer</button>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="script/map.js"></script>
