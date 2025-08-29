@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramètres - Suivi GPS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/styleparametre.css">
+</head>
+<body>
+    <div class="settings-container">
+        <div class="settings-header">
+            <div class="settings-back-btn">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <h1>Paramètres </h1>
+            <p>Personnalisez votre expérience de navigation</p>
+        </div>
+        
+        <div class="settings-body">
+            <div class="settings-sidebar">
+                <div class="settings-category active" data-target="general">
+                    <i class="fas fa-cog"></i>
+                    <span>Général</span>
+                </div>
+                <div class="settings-category" data-target="navigation">
+                    <i class="fas fa-route"></i>
+                    <span>Navigation</span>
+                </div>
+                <div class="settings-category" data-target="appearance">
+                    <i class="fas fa-palette"></i>
+                    <span>Apparence</span>
+                </div>
+                <div class="settings-category" data-target="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span>Notifications</span>
+                </div>
+                <div class="settings-category" data-target="account">
+                    <i class="fas fa-user"></i>
+                    <span>Compte</span>
+                </div>
+                <div class="settings-category" data-target="about">
+                    <i class="fas fa-info-circle"></i>
+                    <span>À propos</span>
+                </div>
+            </div>
+            
+            <div class="settings-content">
+                <!-- Section Général -->
+                <div class="settings-section active" id="general">
+                    <h2>Paramètres Généraux</h2>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Mode Économie d'Énergie</h3>
+                            <p>Réduit la consommation de batterie</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Langue</h3>
+                            <p>Français</p>
+                        </div>
+                        <select class="select-style">
+                            <option>Français</option>
+                            <option>English</option>
+                            <option>Español</option>
+                            <option>Deutsch</option>
+                        </select>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Unités de mesure</h3>
+                            <p>Kilomètres et mètres</p>
+                        </div>
+                        <select class="select-style">
+                            <option>Métrique (km, m)</option>
+                            <option>Impérial (miles, feet)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Cache des cartes</h3>
+                            <p>Utilise 245 Mo d'espace</p>
+                        </div>
+                        <button class="button outline">Nettoyer</button>
+                    </div>
+                </div>
+                
+                <!-- Section Navigation -->
+                <div class="settings-section" id="navigation">
+                    <h2>Préférences de Navigation</h2>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Éviter les péages</h3>
+                            <p>Contourner les routes à péage</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Éviter les autoroutes</h3>
+                            <p>Privilégier les routes secondaires</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Mode hors-ligne</h3>
+                            <p>Utiliser les cartes téléchargées</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Alertes radars</h3>
+                            <p>Notifications des contrôles</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Section Apparence -->
+                <div class="settings-section" id="appearance">
+                    <h2>Personnalisation de l'Interface</h2>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Thème de l'application</h3>
+                            <p>Sombre</p>
+                        </div>
+                        <select class="select-style">
+                            <option>Sombre</option>
+                            <option>Clair</option>
+                            <option>Automatique</option>
+                        </select>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Couleur d'accent</h3>
+                            <p>Personnalisez l'interface</p>
+                        </div>
+                        <div class="color-picker">
+                            <div class="color-option active" style="background-color: #2d5bff;"></div>
+                            <div class="color-option" style="background-color: #1dd1a1;"></div>
+                            <div class="color-option" style="background-color: #ff6b6b;"></div>
+                            <div class="color-option" style="background-color: #feca57;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Zoom de la carte</h3>
+                            <p>Niveau de zoom par défaut</p>
+                        </div>
+                        <div class="slider-value">75%</div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3>Animation 3D des bâtiments</h3>
+                            <p>Affichage des structures en 3D</p>
+                        </div>
+                        <label class="toggle-switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Autres sections (Notifications, Compte, À propos) -->
+                <div class="settings-section" id="notifications">
+                    <h2>Préférences de Notifications</h2>
+                    <!-- Contenu des notifications -->
+                </div>
+                
+                <div class="settings-section" id="account">
+                    <h2>Paramètres du Compte</h2>
+                    <!-- Contenu du compte -->
+                </div>
+                
+                <div class="settings-section" id="about">
+                    <h2>À propos </h2>
+                    <!-- Contenu à propos -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/parametre.js"></script>
+</body>
+</html>

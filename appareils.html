@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appareils - Suivi GPS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/styleappareils.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-location-dot"></i>
+                <span>Suivi GPS</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Carte</a>
+                <a href="#">Navigation</a>
+                <a href="#">Recherche</a>
+                <a href="#" class="active">Appareils</a>
+                <a href="parametre.html">Paramètres</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="page-title">Gestion des Appareils</h1>
+            <p class="page-subtitle">Connectez et gérez vos appareils compatibles avec Suivi GPS</p>
+
+            <div class="devices-grid">
+                <div class="device-card primary">
+                    <span class="primary-badge">PRINCIPAL</span>
+                    <div class="device-header">
+                        <div class="device-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <span class="device-status status-connected">Connecté</span>
+                    </div>
+                    <h3 class="device-name">iPhone 13 Pro</h3>
+                    <p class="device-info">Utilisé pour la navigation principale. Dernière connexion aujourd'hui à 14:32</p>
+                    
+                    <div class="device-details">
+                        <div class="detail-item">
+                            <div class="detail-value">98%</div>
+                            <div class="detail-label">Batterie</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-value">4G</div>
+                            <div class="detail-label">Réseau</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-value">iOS</div>
+                            <div class="detail-label">Système</div>
+                        </div>
+                    </div>
+                    
+                    <div class="device-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-sliders-h"></i>
+                            Configurer
+                        </button>
+                        <button class="btn btn-outline">
+                            <i class="fas fa-sync"></i>
+                            Actualiser
+                        </button>
+                    </div>
+                </div>
+
+                <div class="device-card">
+                    <div class="device-header">
+                        <div class="device-icon">
+                            <i class="fas fa-tablet-alt"></i>
+                        </div>
+                        <span class="device-status status-connected">Connecté</span>
+                    </div>
+                    <h3 class="device-name">iPad Air</h3>
+                    <p class="device-info">Utilisé pour la navigation à vélo. Dernière connexion hier à 09:15</p>
+                    
+                    <div class="device-details">
+                        <div class="detail-item">
+                            <div class="detail-value">74%</div>
+                            <div class="detail-label">Batterie</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-value">Wi-Fi</div>
+                            <div class="detail-label">Réseau</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-value">iPadOS</div>
+                            <div class="detail-label">Système</div>
+                        </div>
+                    </div>
+                    
+                    <div class="device-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-sliders-h"></i>
+                            Configurer
+                        </button>
+                        <button class="btn btn-outline">
+                            <i class="fas fa-sync"></i>
+                            Actualiser
+                        </button>
+                    </div>
+                </div>
+
+                <div class="device-card">
+                    <div class="device-header">
+                        <div class="device-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <span class="device-status status-disconnected">Déconnecté</span>
+                    </div>
+                    <h3 class="device-name">Système Voiture</h3>
+                    <p class="device-info">GPS intégré à votre véhicule. Dernière connexion il y a 3 jours</p>
+                    
+                    <div class="device-details">
+                        <div class="detail-item">
+                            <div class="detail-value">-</div>
+                            <div class="detail-label">Batterie</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-value">-</div>
+                            <div class="detail-label">Réseau</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-value">Auto</div>
+                            <div class="detail-label">Système</div>
+                        </div>
+                    </div>
+                    
+                    <div class="device-actions">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-plug"></i>
+                            Connecter
+                        </button>
+                        <button class="btn btn-outline">
+                            <i class="fas fa-cog"></i>
+                            Paramètres
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="add-device-section">
+                <h2 class="add-device-title">Connecter un nouvel appareil</h2>
+                <p class="add-device-desc">Ajoutez un nouvel appareil à votre compte GeoVision pour synchroniser vos données de navigation et préférences sur tous vos appareils.</p>
+                
+                <button class="btn btn-primary">
+                    <i class="fas fa-plus"></i>
+                    Ajouter un appareil
+                </button>
+
+                <div class="connection-methods">
+                    <div class="connection-btn">
+                        <div class="connection-icon">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <span class="connection-name">QR Code</span>
+                    </div>
+                    
+                    <div class="connection-btn">
+                        <div class="connection-icon">
+                            <i class="fas fa-bluetooth-b"></i>
+                        </div>
+                        <span class="connection-name">Bluetooth</span>
+                    </div>
+                    
+                    <div class="connection-btn">
+                        <div class="connection-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <span class="connection-name">Wi-Fi</span>
+                    </div>
+                    
+                    <div class="connection-btn">
+                        <div class="connection-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <span class="connection-name">Lien</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script/appareils.js"></script>
+</body>
+</html>
